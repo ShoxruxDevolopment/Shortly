@@ -58,6 +58,10 @@ body{
   text-decoration: none;
 
 }
+.nav-link:active{
+  color:#34313D;
+}
+
 .nav-item:not(:last-child){
   margin-right: 29px;
 }
@@ -72,7 +76,6 @@ body{
   align-items:center;
 }
 .log-sign-item{
-
   list-style:none;
 }
 .log-sign-link{
@@ -88,9 +91,12 @@ body{
   padding: 9px 23px 9px 24px;
   margin-left: 37px;
 }
+.sign-up:active{
+  background-color:#9AE3E3;
+}
+
 .sign-up-link{
   color:#fff;
-
 }
 .main{
   display: flex;
@@ -99,8 +105,7 @@ body{
   height: 640px;
   margin-top: 78px;
   padding-left: 165px;
-  /* border:1px solid green; */
-}
+ }
 .main-content{
   margin-top: 61px;
 }
@@ -121,7 +126,6 @@ body{
   color:#9E9AA8;
   margin-top: 5px;
   margin-bottom: 38px;
-
 }
 .right-content{
   position: absolute;
@@ -133,6 +137,9 @@ body{
   height: 56px;
   background-color:#2BD0D0;
   border-radius: 30px;
+}
+.button:active{
+  background-color:#9AE3E3;
 }
 .btn{
   display: flex;
@@ -167,7 +174,6 @@ body{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-
 }
 .input{
   width: 769px;
@@ -180,7 +186,64 @@ body{
   border-radius:10px;
   border:none;
   padding: 14px 32px;
+  margin-bottom: 8px;
 }
+
+.input:focus::placeholder {
+  color: #F46363;
+}
+.input:focus {
+  outline-color:  #F46363;
+}
+.input-red-text{
+  display: none;
+  color:#F46363;
+}
+.input:focus~.input-red-text{
+  display: block;
+}
+.block-shortener{
+  position: relative;
+  top: 100px;
+  width: 1110px;
+  height: 248px;
+  margin-top: 50px;
+}
+.short-links{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 16px 24px 16px 32px;
+  margin-bottom: 16px;
+  background-color:#fff;
+  border-radius:5px;
+}
+.url-link{
+  color:#2BD0D0;
+  text-decoration: none;
+}
+.url-link-orig{
+  color:#34313D;
+  text-decoration: none;
+}
+
+.original-link{
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
+  margin-right: auto;
+}
+.short-link{
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
+  margin-right: 24px;
+}
+
+
+
 .btn-url{
   width: 188px;
   height: 64px;
@@ -191,7 +254,27 @@ body{
   background-color:#2BD0D0;
   color:#fff;
   margin-left: 24px;
+  border:none;
 }
+
+.btn-url:active{
+  background-color:#9AE3E3;
+}
+.btn-short{
+  width: 103px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+  color:#fff;
+  background-color:#2BD0D0;
+  border:none;
+  border-radius:5px;
+}
+.btn-short:active{
+  background-color:#9AE3E3;
+}
+
 .advensed-content{
   padding-top: 204px;
   margin-bottom: 56px;
