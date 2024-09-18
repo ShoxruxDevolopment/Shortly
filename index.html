@@ -59,11 +59,13 @@
   <div class="advensed-container">
     <div class="shorten-url-link">
       <div class="input-red">
-        <input class="input" type="url" placeholder="Shorten a link here...">
+        <form class="js-url-shortner-form" action="https://echo.htmlacademy.ru">
+          <input class="input" type="url" placeholder="Shorten a link here...">
         <p class="input-red-text">Please add a link</p>
-      </div>
-      <button class="btn-url">Shorten It!</button>
 
+      </div>
+      <button type="submit" class="btn-url">Shorten It!</button>
+    </form>
     </div>
     <div class="block-shortener">
 
@@ -71,19 +73,19 @@
         <div class="original-link"><a class="url-link-orig" href="#">https://www.frontendmentor.io</a>
         </div>
         <div class="short-link"><a class="url-link" href="#">https://rel.ink/k4lKyk</a></div>
-        <button class="btn-short">Copy</button>
+        <button class="btn-short js-copy-short-link-button">Copy</button>
       </div>
       <div class="short-links">
         <div class="original-link"><a class="url-link-orig" href="#">https://twitter.com/frontendmentor</a>
         </div>
         <div class="short-link"><a class="url-link" href="#">https://rel.ink/gxOXp9</a></div>
-        <button class="btn-short">Copy</button>
+        <button class="btn-short js-copy-short-link-button">Copy</button>
       </div>
       <div class="short-links">
         <div class="original-link"><a class="url-link-orig" href="#">https://www.linkedin.com/company/frontend-mentor</a>
         </div>
         <div class="short-link"><a class="url-link" href="#">https://rel.ink/gob3X9</a></div>
-        <button class="btn-short">Copy</button>
+        <button class="btn-short js-copy-short-link-button">Copy</button>
       </div>
 
     </div>
@@ -156,10 +158,14 @@
 
           <div class="socials">
             <ul class="socials-list">
-              <li class="log-sign-item socials-item"><a class="log-sign-link socials-link" href=#"><img src="./img/facebook.svg" alt=""></a></li>
-              <li class="log-sign-item socials-item"><a class="log-sign-link socials-link" href=#"><img src="./img/twit.svg" alt=""></a></li>
-              <li class="log-sign-item socials-item"><a class="log-sign-link socials-link" href=#"><img src="./img/pant.svg" alt=""></a></li>
-              <li class="log-sign-item socials-item"><a class="log-sign-link socials-link" href=#"><img src="./img/instagram.svg" alt=""></a></li>
+              <li class="log-sign-item socials-item"><a class="log-sign-link socials-link" href=#"><img class="icon-social
+                " src="./img/facebook.svg" alt=""></a></li>
+              <li class="log-sign-item socials-item"><a class="log-sign-link socials-link" href=#"><img class="icon-social
+                " src="./img/twit.svg" alt=""></a></li>
+              <li class="log-sign-item socials-item"><a class="log-sign-link socials-link" href=#"><img class="icon-social
+                " src="./img/pant.svg" alt=""></a></li>
+              <li class="log-sign-item socials-item"><a class="log-sign-link socials-link" href=#"><img class="icon-social
+                " src="./img/instagram.svg" alt=""></a></li>
 
             </ul>
 
@@ -177,6 +183,7 @@
 
   </div>
   </div>
+  <script src="./main.js"></script>
 
 </body>
 </html>

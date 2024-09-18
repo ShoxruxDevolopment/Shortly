@@ -6,6 +6,11 @@
 body{
   font-family: 'Poppins', 'Arial' ,sans-serif;
 }
+
+
+
+
+
 .site-wrapper{
   width: 1440px;
   margin: auto;
@@ -85,6 +90,8 @@ body{
   color: #9E9AA8;
   text-decoration: none;
 }
+
+
 .sign-up{
   border-radius: 20px;
   background-color:#2BD0D0;
@@ -203,11 +210,15 @@ body{
   display: block;
 }
 .block-shortener{
+  display: none;
   position: relative;
   top: 100px;
   width: 1110px;
   height: 248px;
   margin-top: 50px;
+}
+.block-shortener-open{
+  display: block;
 }
 .short-links{
   display: flex;
@@ -255,6 +266,7 @@ body{
   color:#fff;
   margin-left: 24px;
   border:none;
+  cursor: pointer;
 }
 
 .btn-url:active{
@@ -270,6 +282,10 @@ body{
   background-color:#2BD0D0;
   border:none;
   border-radius:5px;
+  cursor: pointer;
+}
+.btn-short-copied{
+  background-color:#3A3054;
 }
 .btn-short:active{
   background-color:#9AE3E3;
@@ -433,7 +449,9 @@ body{
   font-weight: 500;
   margin-bottom: 10px;
 }
-
+.icon-social:hover{
+  fill: #2BD0D0;
+}
 .socials-list{
   display: flex;
   justify-content: space-between;
