@@ -17,6 +17,9 @@ if(elBlockShortner){
 
       evt.target.classList.add('btn-short-copied');
 
+    //  copy link text
+      navigator.clipboard.writeText(evt.target.previousElementSibling.textContent);
+
       setTimeout(function(){
         evt.target.textContent='Copy';
         evt.target.classList.remove('btn-short-copied');
